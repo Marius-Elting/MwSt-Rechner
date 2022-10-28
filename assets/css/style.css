@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #wasRechnenLabel {
+    display: grid;
+    grid-area:
+        "headline headline"
+        "radio1 txt1"
+        "radio2 txt2";
+}
+
+#wasRechnenLabel p */
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+body section {
+    width: 550px;
+    background-color: blueviolet;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+div {
+    padding: 5px;
+    background-color: darkgrey;
+    border-radius: 10px;
+}
+
+body section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#wasRechnenDiv {
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-template-rows: repeat(2, auto);
+}
+
+#wasRechnenDiv p:nth-of-type(1) {
+    grid-column: 1/3;
+}
+
+#wasRechnenDiv input {
+    width: 30px;
+    place-self: center center;
+}
+
+/* #MwstSatz {
+    background-color: lightgray;
+
+} */
+
+.berechnung {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.berechnung input {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    border: 3px solid transparent;
+    ;
+}
+
+.berechnung input:focus {
+    border: 3px solid blue;
+
+}
+
+button {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+button:hover {
+    background-color: blue;
+}

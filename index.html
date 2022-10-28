@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <form action="">
+            <h1>Mwst Rechner</h1>
+            <div id="wasRechnenDiv">
+                <p>Was soll berechnet werden</p>
+                <input type="radio" onchange="selectBruNet(value)" i value="Netto-Brutto" name="wasRechnen" checked>
+                <label for="wasRechnen" id="net-brut"> Mehrwertsteuer aufschlagen (Brutto zu Netto)</label>
+                <input type="radio" onchange="selectBruNet(value)" value="Brutto-Netto" name="wasRechnen">
+                <label for="wasRechnen" id="brut-net">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
+            </div>
+            <div id="MwstSatz">
+                <p>Was soll berechnet werden</p>
+                <input onchange="selectSatz(value)" type="radio" value="Satz19" name="MwstSatz" checked>
+                <label for="MwstSatz" id="Satz19"> 19 %</label>
+                <input onchange="selectSatz(value)" type="radio" id="Satz" value="Satz7" name="MwstSatz">
+                <label for="MwstSatz" id="Satz7">7%</label>
+            </div>
+            <div class="berechnung">
+                <label for="" id="inputLabel">Nettobetrag (Preis ohne MwSt) in Euro</label>
+                <input type="number" placeholder="Betrag" id="numberInput">
+            </div>
+            <button type="button" onclick="berechnen()">Berechnen</button>
+        </form>
+        <h2>Endpreis</h2>
+        <div>
+            <p>Mehrwertsteuerbetrag</p>
+            <p id="MwstBetrag">0,00</p>
+        </div>
+        <div class="endpreiDiv">
+            <p id="endPreisTxT">Bruttobetrag (Endpreis)</p>
+            <p id="endpreis">0,00</p>
+        </div>
+        <p>schöneres Design in arbeit :)</p>
+
+    </section>
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
